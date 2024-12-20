@@ -13,7 +13,7 @@ This project demonstrates a Retrieval-Augmented Generation (RAG) system for answ
 🛠️ Setup Instructions
 1. Clone the Repository
 
-git clone https://github.com/yourusername/rag-pdf-qa-demo.git
+git clone https://github.com/GoroMG/codingburgas-LLMs.git
 cd rag-pdf-qa-demo
 
 2. Install Dependencies
@@ -32,7 +32,7 @@ OPENAI_API_KEY=your_openai_api_key
 
 4. Prepare Data
 
-    Place your PDF files in the data folder (e.g., rag-pdf-qa-demo/data).
+    Place your PDF files in the data folder (e.g., RAG/data).
     The system will automatically detect and process new PDFs during runtime.
 
 🖥️ Usage
@@ -73,12 +73,14 @@ Interact with the App
 
 📂 Project Structure
 
-├── data/                    # Folder for PDF files
-├── chroma_db/               # Persistent Chroma database
-├── .env                     # Environment variables
+'''
+├── data/              # Folder for PDF files
+├── chroma_db/         # Persistent Chroma database
+├── .env               # Environment variables
 ├── rag_demo_with_chroma.py  # Main application script
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
+├── requirements.txt   # Python dependencies
+└── README.md          # Project documentation
+'''
 
 🛡️ Error Handling
 
