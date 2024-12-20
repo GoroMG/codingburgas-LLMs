@@ -73,14 +73,15 @@ Interact with the App
 
 📂 Project Structure
 
-'''
-├── data/              # Folder for PDF files
-├── chroma_db/         # Persistent Chroma database
-├── .env               # Environment variables
-├── rag_demo_with_chroma.py  # Main application script
-├── requirements.txt   # Python dependencies
-└── README.md          # Project documentation
-'''
+
+├── data/              # Folder for PDF files <br />
+├── chroma_db/         # Persistent Chroma database <br />
+├── .env               # Environment variables <br />
+├── rag_demo_with_chroma.py  # Main application script <br />
+├── requirements.txt   # Python dependencies <br />
+└── README.md          # Project documentation <br />
+
+
 
 🛡️ Error Handling
 
