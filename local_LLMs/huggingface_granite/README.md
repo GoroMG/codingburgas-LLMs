@@ -8,9 +8,7 @@ This repository demonstrates how to run a **Large Language Model (LLM)** locally
 3. [Usage](#usage)
 4. [Model Download and Storage](#model-download-and-storage)
 5. [Runtime Measurement](#runtime-measurement)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Troubleshooting](#troubleshooting)
+
 
 ---
 
@@ -54,6 +52,7 @@ pip install transformers
   ```bash
   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
   ```
+  **Note:** you can also check the installation syntax  at: https://pytorch.org/get-started/locally/
 
 - **For CPU-only setups:**
   ```bash
@@ -109,25 +108,10 @@ Runtime: 2.35 seconds
 
 Performance depends on whether you use a CUDA-enabled GPU or CPU.
 
----
-
-## Contributing
-
-Contributions are welcome! Fork the repository, make your changes, and submit a pull request. Ensure your changes are well-documented and tested.
-
----
-
-## License
-
-This project is licensed under the **MIT License**. See the LICENSE file for more details.
-
----
 
 ## Troubleshooting
 
 1. **Model download issues:** Ensure a stable internet connection and sufficient disk space.
 2. **Slow performance:** Use a GPU for faster inference.
 3. **Out of memory:** Reduce `max_new_tokens` or use CPU if GPU memory is insufficient.
-
-Feel free to open an issue if you encounter further problems.
 
