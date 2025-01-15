@@ -44,7 +44,7 @@ pip install transformers
 
 #### 2. Install PyTorch (GPU or CPU)
 - **For CUDA-enabled GPUs:**  
-  First, check your CUDA version:
+  First, check your CUDA version, if you have NVIDIA drivers installed:
   ```bash
   nvidia-smi
   ```
@@ -72,7 +72,7 @@ print(torch.cuda.is_available())  # Returns True if GPU is detected
 Once dependencies are installed, run the demo script:
 
 ```bash
-python script_name.py
+python hf_granite_example.py
 ```
 
 ### Example
@@ -87,14 +87,8 @@ python script_name.py
 ## Model Download and Storage
 
 The script automatically downloads the `ibm-granite/granite-3.1-2b-instruct` model to your Hugging Face cache directory. Default locations:
-- **Linux/macOS:** `~/.cache/huggingface/transformers`
-- **Windows:** `C:\Users\your_username\.cache\huggingface\transformers`
-
-You can change the cache directory by setting the `TRANSFORMERS_CACHE` environment variable:
-```bash
-export TRANSFORMERS_CACHE=/path/to/cache_directory  # Linux/macOS
-set TRANSFORMERS_CACHE=C:\path\to\cache_directory  # Windows
-```
+- **Linux/macOS:** `~/.cache/huggingface/`
+- **Windows:** `C:\Users\your_username\.cache\huggingface\`
 
 ---
 
@@ -103,7 +97,7 @@ set TRANSFORMERS_CACHE=C:\path\to\cache_directory  # Windows
 The script measures the time taken for model inference. Example output:
 ```
 Output: ['A Large Language Model (LLM) is...']
-Runtime: 2.35 seconds
+Runtime: 90.35 seconds
 ```
 
 Performance depends on whether you use a CUDA-enabled GPU or CPU.

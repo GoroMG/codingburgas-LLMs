@@ -36,3 +36,25 @@ The core function of the app is `generate_response`, which communicates with Oll
 - Ollama’s `generate` endpoint returns a stream of JSON blobs. These blobs are iterated through using `response.iter_lines()`:
   - The response body is checked for the `response` field, which contains the model’s answer.
   - Once the full response is collected, it is printed to the screen.
+
+# Using Local LLM with Ollama and LangChain
+
+This example demonstrates how to use a local Large Language Model (LLM) with [Ollama](https://ollama.ai/) and [LangChain](https://www.langchain.com/).
+
+## Prerequisites
+
+- Python 3.9 or later.
+- `langchain_community` library.
+- Ensure you have the required LLM downloaded locally, example uses `llama3.2`. If not, you can pull the desired model using the following command:
+
+```bash
+ollama pull <model_name>
+```
+
+## Start the example:
+
+  ```
+  python simple_with_langchain.py
+  ```
+
+

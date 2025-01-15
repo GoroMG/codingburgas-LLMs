@@ -2,11 +2,8 @@ import json
 import requests
 import streamlit as st
 
-# IMPORTANT: ollama must run.
-# start it from the terminal by using >ollama serve
 # Define the model to be used
 MODEL_NAME = 'llama3.2'  # Update this to your desired model version
-
 
 # Function to generate responses from the model
 def generate_response(prompt):
@@ -65,6 +62,7 @@ def main():
             response = generate_response(user_input)
         if response:
             st.text_area("Model Response:", value=response, height=200)
+
 
 if __name__ == "__main__":
     main()
